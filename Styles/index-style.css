@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+header
+*/
+
+#header{
+    background-color: rgb(24, 25, 26);
+    height: 4rem;
+}
+
+#headerImg {
+    margin: 0;
+    padding: 0;
+    float: left;
+    max-height: 100%;
+}
+
+#headerText{
+    color:aliceblue;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: .5rem 0;
+}
+
+/*
+nav bar
+*/
+
+/*mobile*/
+@media only screen and (max-width: 768px){
+    #mainNav{
+        height: 6vw;
+        min-height: 50px;
+        background-color: rgb(41, 38, 38);
+        display: block;
+    }
+    
+    #homeButton {
+        height: 100%;
+        display: none;
+    }
+
+    #mainNav ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    #mainNav ul a li{
+        float: none;
+        background-color: rgb(41, 38, 38);
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    
+    #mainNav ul a li p{
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        font-size: 2rem;
+        width: 100%;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 768px){
+    #mainNav{
+        height: 50px;
+        background-color: rgb(41, 38, 38);
+        display: block;
+    }
+
+    #homeButton {
+        height: 100%;
+        background-color: black;
+    }
+
+    #mainNav ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        float: right;
+        width: 700px;
+    }
+    
+    #mainNav ul a li{
+        background-color: rgb(41, 38, 38);
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+    }
+    
+    #mainNav ul a li p{
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+/*extra wide*/
+@media only screen and (min-width: 1300px){
+    #mainNav{
+        height: 50px;
+        background-color: rgb(41, 38, 38);
+        display: block;
+    }
+
+    #homeButton {
+        height: 100%;
+    }
+
+    #mainNav ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        float: right;
+        width: 700px;
+    }
+    
+    #mainNav ul a li{
+        background-color: rgb(41, 38, 38);
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+    }
+    
+    #mainNav ul a li p{
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+.center {
+    position: relative;
+    display: block;
+}
+  
+.center p {
+    
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
