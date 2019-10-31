@@ -9,7 +9,7 @@ header
 */
 
 #header{
-    background-color: rgb(24, 25, 26);
+    background-color: rgb(0, 0, 0);
     height: 4rem;
 }
 
@@ -36,7 +36,7 @@ nav bar
     #mainNav{
         height: 6vw;
         min-height: 50px;
-        background-color: rgb(41, 38, 38);
+        background-color: rgb(27, 27, 27);
         display: block;
     }
     
@@ -53,7 +53,6 @@ nav bar
     
     #mainNav ul a li{
         float: none;
-        background-color: rgb(41, 38, 38);
         list-style: none;
         height: 100%;
         width: 100%;
@@ -63,7 +62,6 @@ nav bar
     #mainNav ul a li p{
         margin: 0;
         padding: 0;
-        color: aliceblue;
         font-size: 2rem;
         width: 100%;
     }
@@ -73,7 +71,7 @@ nav bar
 @media only screen and (min-width: 768px){
     #mainNav{
         height: 50px;
-        background-color: rgb(41, 38, 38);
+        background-color: rgb(27, 27, 27);
         display: block;
     }
 
@@ -91,7 +89,6 @@ nav bar
     }
     
     #mainNav ul a li{
-        background-color: rgb(41, 38, 38);
         list-style: none;
         height: 100%;
         width: 25%;
@@ -102,7 +99,6 @@ nav bar
     #mainNav ul a li p{
         margin: 0;
         padding: 0;
-        color: aliceblue;
         font-size: 1.5rem;
         width: 100%;
     }
@@ -112,7 +108,7 @@ nav bar
 @media only screen and (min-width: 1300px){
     #mainNav{
         height: 50px;
-        background-color: rgb(41, 38, 38);
+        background-color: rgb(27, 27, 27);
         display: block;
     }
 
@@ -129,7 +125,6 @@ nav bar
     }
     
     #mainNav ul a li{
-        background-color: rgb(41, 38, 38);
         list-style: none;
         height: 100%;
         width: 25%;
@@ -140,7 +135,6 @@ nav bar
     #mainNav ul a li p{
         margin: 0;
         padding: 0;
-        color: aliceblue;
         font-size: 1.5rem;
         width: 100%;
     }
@@ -159,4 +153,16 @@ nav bar
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.hoverInverse li{
+    transition: background .4s, color .4s; 
+    color:aliceblue;
+    background: rgb(27, 27, 27);
+}
+
+.hoverInverse:hover li{
+    background:aliceblue;
+    color:rgb(27, 27, 27);
 }
