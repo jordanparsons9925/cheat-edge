@@ -86,6 +86,7 @@
             this.btnStep.TabIndex = 6;
             this.btnStep.Text = ">>>";
             this.btnStep.UseVisualStyleBackColor = true;
+            this.btnStep.Click += new System.EventHandler(this.btnStep_Click);
             // 
             // btnBack
             // 

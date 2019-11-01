@@ -73,5 +73,12 @@ namespace Cheat_Tutorial
             tutorial2 = rnd.Next(-1000, 1000);
 
         }
+
+        private void btnStep_Click(object sender, EventArgs e)
+        {
+            closeApp = false;
+            SwitchForms.OpenStep3();
+            SwitchForms.CloseStep2();
+        }
     }
 }

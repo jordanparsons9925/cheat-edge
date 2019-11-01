@@ -18,3 +18,4 @@ C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug
 C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep2.resources
 C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.Properties.Resources.resources
 C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.csproj.GenerateResource.Cache
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep3.resources

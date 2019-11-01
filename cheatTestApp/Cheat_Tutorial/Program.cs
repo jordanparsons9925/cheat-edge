@@ -16,7 +16,7 @@ namespace Cheat_Tutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            SwitchForms.OpenStep1();
+            SwitchForms.OpenStep(1); //Change the integer here to change which form is displayed on boot.
             Application.Run();
             
         }
