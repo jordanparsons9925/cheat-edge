@@ -1,0 +1,496 @@
+:root{
+    --HeaderToneA:rgb(37, 35, 46);
+    --HeaderTextA:rgb(240, 248, 255);
+
+    --NavToneA:rgb(45, 43, 51);
+    --NavHighlightA:rgb(240, 248, 255);
+    --NavTextA:rgb(240, 248, 255);
+    --NavHighlightTextA:rgb(68, 65, 80);
+
+    --bodyToneA:#808080;
+    --bodyToneB:rgb(65, 69, 71);
+    --bodyToneC:rgb(45, 43, 51);
+    --bodyTextA:rgb(240, 248, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+body, html{
+    background-color: var(--bodyToneA);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*
+nav bar
+*/
+
+/*mobile*/
+@media only screen and (max-width: 768px){
+    /*
+    #mainNav{
+        height: 6vw;
+        min-height: 50px;
+        background-color: var(--NavToneA);
+        display: block;
+    }
+    
+    #homeButton {
+        height: 100%;
+        display: none;
+    }
+
+    #mainNav ul{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    #mainNav ul a li{
+        float: none;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    
+    #mainNav ul a li p{
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #lightSwitch{
+        display: none;
+    }
+    */
+    #mainNav{
+        width: 100%;
+        height: 6vw;
+        min-height: 50px;
+        background-color: var(--NavToneA);
+        display: block;
+    }
+
+    #homeButton {
+        height: 100%;
+        display: none;
+    }
+
+    #navContainer{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .T1 li{
+        float: none;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+    
+    .T1 li p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #lightSwitch{
+        height:100%;
+        float:right;
+        filter: grayscale() contrast(2);
+        padding-right: 10px;
+    }
+
+    .T2{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 50px;
+        width: 100%;
+        float: left;
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+        font-size: 1.5rem;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+
+    .T2:hover{
+        background:var(--NavHighlightA);
+        color:var(--NavHighlightTextA);
+    }
+
+    .T2:hover .T2Dropdown{
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown{
+        position: relative;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        float: none;
+        display: none;
+        top: 100%;
+        font-size: .9rem; 
+    }
+    .T2Dropdown li{
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown:hover{
+        background:var(--NavHighlightA) !important;
+    }
+
+    .T2Dropdown:hover li{
+        color:var(--NavHighlightTextA);
+    }
+
+}
+
+/*desktop*/
+@media only screen and (min-width: 768px){
+    #mainNav{
+        width: 100%;
+        height: 50px;
+        background-color: var(--NavToneA);
+        display: block;
+    }
+
+    #homeButton {
+        padding:10px;
+        height: 30px;
+        background-color: var(--NavToneA);
+        float: left;
+    }
+
+    #navContainer{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        float: left;
+        width: 700px;
+    }
+    
+    .T1 li{
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+    }
+    
+    .T1 li p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #lightSwitch{
+        height:100%;
+        float:right;
+        filter: invert(100%);
+        padding-right: 10px;
+    }
+
+    .T2{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+        font-size: 1.5rem;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+
+    .T2:hover{
+        background:var(--NavHighlightA);
+        color:var(--NavHighlightTextA);
+    }
+
+    .T2:hover .T2Dropdown{
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown{
+        position: relative;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        float: none;
+        display: none;
+        top: 100%;
+        font-size: .9rem;
+    }
+
+    .T2Dropdown li{
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown:hover{
+        background:var(--NavHighlightA) !important;
+    }
+
+    .T2Dropdown:hover li{
+        color:var(--NavHighlightTextA);
+    }
+}
+
+/*extra wide (no change)*/
+@media only screen and (min-width: 1300px){
+
+    #mainNav{
+        height: 50px;
+        background-color: var(--NavToneA);
+        display: block;
+    }
+
+    #homeButton {
+        padding:10px;
+        height: 30px;
+        background-color: var(--NavToneA);
+        float: left;
+    }
+
+    #navContainer{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        float: left;
+        width: 700px;
+    }
+    
+    .T1 li{
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+    }
+    
+    .T1 li p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #lightSwitch{
+        height:100%;
+        float:right;
+        filter: invert(100%);
+        padding-right: 10px;
+    }
+
+    .T2{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 100%;
+        width: 25%;
+        float: left;
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+        font-size: 1.5rem;
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+
+    .T2:hover{
+        background:var(--NavHighlightA);
+        color:var(--NavHighlightTextA);
+    }
+
+    .T2:hover .T2Dropdown{
+        display: block;
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown{
+        position: relative;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        float: none;
+        display: none;
+        top: 100%;
+        font-size: .9rem;
+
+        
+    }
+    .T2Dropdown li{
+        transition: background .4s, color .4s; 
+        color:var(--NavTextA);
+        background: var(--NavToneA);
+    }
+
+    .T2Dropdown:hover{
+        background:var(--NavHighlightA) !important;
+    }
+
+    .T2Dropdown:hover li{
+        color:var(--NavHighlightTextA);
+    }
+}
+
+.center {
+    position: relative;
+    display: block;
+}
+  
+.center p {
+    
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hoverInverse li{
+    transition: background .4s, color .4s; 
+    color:var(--NavTextA);
+    background: var(--NavToneA);
+}
+
+.hoverInverse:hover li{
+    background:var(--NavHighlightA);
+    color:var(--NavHighlightTextA);
+}
+
+.hoverInverseB li{
+    transition: background .4s, color .4s; 
+    color:var(--bodyTextA);
+    background: var(--bodyToneB);
+}
+
+.hoverInverseB:hover li{
+    background:var(--bodyTextA);
+    color:var(--bodyToneB);
+}
+.T2center{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    float: none;
+    display: none;
+    top: 100%;
+    font-size: .9rem;
+}
+
+/*
+Aside
+*/
+
+/*desktop*/
+@media only screen and (min-width: 768px){
+    #asideTutorial{
+        margin: 0;
+        padding: 0;
+        background-color: var(--bodyToneB);
+        color:var(--bodyTextA);
+        width: 226px;
+        float: left;
+        flex-grow: 1;
+    }
+
+    #tutorialContainer{
+        margin: 0;
+        padding: 0;
+    }
+
+    .tutorialSection{
+        margin-bottom: 0; 
+        list-style: none;
+        padding:0;
+    }
+
+    .tutorialHeaderLink{
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        background-color: var(--bodyToneC);
+        text-decoration: none;
+    }
+
+    .tutorialHeader{
+        margin: 0 0 1em 0; 
+        color:var(--bodyTextA);
+    }
+
+    .tutorialLink{
+        margin: 0;
+        padding: 0;
+        height: 30px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .tutorialElement{
+        background-color: var(--bodyToneB);
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        border-bottom: 1px var(--bodyToneC) solid;
+        border-top: 1px var(--bodyToneC) solid;
+    }
+    .tutorialText{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*
+Body
+*/
+
+main{
+    background-color: var(--bodyToneA);
+}

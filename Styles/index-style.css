@@ -426,6 +426,7 @@ nav bar
     margin: 0;
     position: absolute;
     text-align: center;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
