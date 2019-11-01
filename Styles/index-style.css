@@ -252,7 +252,7 @@ nav bar
     #lightSwitch{
         height:100%;
         float:right;
-        filter: grayscale() contrast(2);
+        filter: invert(100%);
         padding-right: 10px;
     }
 
@@ -355,7 +355,7 @@ nav bar
     #lightSwitch{
         height:100%;
         float:right;
-        filter: grayscale() contrast(2);
+        filter: invert(100%);
         padding-right: 10px;
     }
 
