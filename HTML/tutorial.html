@@ -7,9 +7,10 @@
     <title>Cheat Engine Tutorials</title>
     <link rel="icon" href="../Media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/tutorial-style.css">
+    <script src="../Scripts/Tutorial.js" defer></script>
 </head>
 <body>
-   <nav id="mainNav">
+   <nav id="mainNav" class="sticky">
         <a href="../index.html"><img id="homeButton" src="../Media/home-button.png" alt=""></a>
         <ul id="navContainer">
             <a href="../index.html" class="hoverInverse T1"><li class="center"><p>Home</p></li></a>
@@ -37,20 +38,20 @@
         <img id="lightSwitch" src="../Media/light.png" alt="">
    </nav>
 
-   <aside id="asideTutorial">
+   <aside id="asideTutorial" class="sticky">
        <ol id="tutorialContainer">
             <ol class="tutorialSection"><a class="tutorialHeaderLink center hoverInverse" href=""><p class="tutorialHeader">Installation</p></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 1</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 2</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 3</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 4</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 5</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 6</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 7</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 8</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 9</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 10</p></li></a>
-                <a class="tutorialLink center hoverInverseB" href=""><li class="tutorialElement"><p class="tutorialText">Step 11</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep1"><li class="tutorialElement"><p class="tutorialText">Step 1</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep2"><li class="tutorialElement"><p class="tutorialText">Step 2</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep3"><li class="tutorialElement"><p class="tutorialText">Step 3</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep4"><li class="tutorialElement"><p class="tutorialText">Step 4</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep5"><li class="tutorialElement"><p class="tutorialText">Step 5</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep6"><li class="tutorialElement"><p class="tutorialText">Step 6</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep7"><li class="tutorialElement"><p class="tutorialText">Step 7</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep8"><li class="tutorialElement"><p class="tutorialText">Step 8</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep9"><li class="tutorialElement"><p class="tutorialText">Step 9</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep10"><li class="tutorialElement"><p class="tutorialText">Step 10</p></li></a>
+                <a class="tutorialLink center hoverInverseB" href="#InstallationStep11"><li class="tutorialElement"><p class="tutorialText">Step 11</p></li></a>
                 
            </ol>
            <ol class="tutorialSection"><a class="tutorialHeaderLink center hoverInverse" href=""><p class="tutorialHeader">Uninstallation</p></a>
@@ -84,11 +85,106 @@
    </aside>
 
    <main class="mainContainer">
-       <ol class="mainTutorialContainer">
-           <ul class="mainStepContainer">
-               <p class="mainText"></p>
-               <img class="mainImage" src="" alt="">
+       <ol class="mainTutorialContainer"><a id="Installation" class="center mainTutorialBox"><p class="mainTutorialText">Installing Cheat Engine 6.8.3 on Windows 10</p></a>
+           <ul class="mainStepContainer"><a id="InstallationStep1"><p class="mainHeaderText">Step 1</p></a>
+               <p class="mainText">Navigate to the cheat engine website and select the download page: https://cheatengine.org/. Click on the Downloads link of the left-navigation bar and scroll down the page to where it lists older versions of CheatEngine.  Click any link to navigate to the GitHub source</p>
+               <img class="mainImage" src="../Media/tutorial-snippings/installation-step1.png" alt="">
+               <p class="mainText">Alternatively, you can go directly to the GitHub page. https://github.com/cheat-engine/cheat-engine/releases/tag/6.8.3.  Newer versions are available but for the purpose of this tutorial version 6.8.3 has been selected.</p>
            </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep2"><p class="mainHeaderText">Step 2</p></a>
+               <p class="mainText">Version 6.8.3 is stored on GitHub.  Scroll to the bottom of the page and select the cheatengine.exe to download your file.</p>
+               <img class="mainImage" src="../Media/tutorial-snippings/installation-step2.png" alt="">
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep3"><p class="mainHeaderText">Step 3</p></a>
+                <p class="mainText">After you have selected a download location for your file, navigate to the file and execute it. At this point you should see Cheat Engine’s setup application.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/installation-step3.png" alt="">
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep4"><p class="mainHeaderText">Step 4</p></a>
+                <p class="mainText">Read through the License Agreement and “accept” the terms of the agreement.  Then, press Next.</p>
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep5"><p class="mainHeaderText">Step 5</p></a>
+                <p class="mainText">You will be asked to select the installation directory for Cheat Engine.  This can be any directory of your choosing.    Click “next” when done.</p>
+               <img class="mainImage" src="../Media/tutorial-snippings/installation-step5.png" alt="">
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep6"><p class="mainHeaderText">Step 6</p></a>
+                <p class="mainText">At this point you will be asked what to list Cheat Engine under in the start menu.  Write your desired folder name or continue using the default provided. Press “Next” to continue.</p>
+               <img class="mainImage" src="../Media/tutorial-snippings/installation-step6.png" alt="">
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep7"><p class="mainHeaderText">Step 7</p></a>
+                <p class="mainText">On the Additional Tasks screen, select if you would like a desktop icon to be created.  You can also select to have cheat engine automatically update when the program is launched. Press “Next” to continue.</p>
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep8"><p class="mainHeaderText">Step 8</p></a>
+                <p class="mainText">At this step you may get 1 or more product offers with the option to download software such as Yahoo search engine, Avast antivirus and McAfee. Read carefully and then decide whether or not you want to download the additional software. Then click “Next”. You may need to repeat this step for each additional product offered to you.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/installation-step8.png" alt="">
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep9"><p class="mainHeaderText">Step 9</p></a>
+                <p class="mainText">On this screen you must review your information and make sure that it is correct before you press the Install button to complete the installation. If the information is inaccurate you can press the “Back” button to make changes.  After pressing install, Cheat Engine goes through the process of installing the software, this may take a few minutes.</p>
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep10"><p class="mainHeaderText">Step 10</p></a>
+                <p class="mainText">Review the recent updates to Cheat Engine and press “Next”.</p>
+           </ul>
+           <ul class="mainStepContainer"><a id="InstallationStep11"><p class="mainHeaderText">Step 11</p></a>
+                <p class="mainText">On the final screen of the installation you are able to reset Cheat Engine’s settings (useful if you previously installed cheat engine and old settings were not deleted).  You may also choose to launch Launch Cheat Engine once you’ve clicked  “Finish” is pressed. Press finish to finish the setup.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/installation-step11.png" alt="">
+           </ul>
+       </ol>
+       <ol class="mainTutorialContainer"><a id="Uninstallation" class="center mainTutorialBox"><p class="mainTutorialText">Uninstalling Cheat Engine 6.8.3 on Windows 10</p></a>
+            <ul class="mainStepContainer"><a id="UninstallationStep1"><p class="mainHeaderText">Step 1</p></a>
+                <p class="mainText">Open the Start Menu by clicking in the lower left of your screen on the Windows icon or by pressing the Windows Key on your keyboard.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/uninstallation-step1.png" alt="">
+            </ul>
+            <ul class="mainStepContainer"><a id="UninstallationStep2"><p class="mainHeaderText">Step 2</p></a>
+                <p class="mainText">Type “remove programs” and select “Add or Remove Programs”.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/uninstallation-step2.png" alt="">
+            </ul>
+            <ul class="mainStepContainer"><a id="UninstallationStep3"><p class="mainHeaderText">Step 3</p></a>
+                <p class="mainText">Scroll through the list of available programs and find Cheat Engine.  Select it, then press Uninstall.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/uninstallation-step3.png" alt="">
+            </ul>
+            <ul class="mainStepContainer"><a id="UninstallationStep4"><p class="mainHeaderText">Step 4</p></a>
+                <p class="mainText">You will be asked to confirm the removal of all components of Cheat Engine.  Agree with the dialog box.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/uninstallation-step4.png" alt="">
+            </ul>
+            <ul class="mainStepContainer"><a id="UninstallationStep5"><p class="mainHeaderText">Step 5</p></a>
+                <p class="mainText">Now you will receive confirmation that Cheat Engine has been removed.  Thanks for using Cheat Engine!</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/uninstallation-step5.png" alt="">
+            </ul>
+       </ol>
+       <ol class="mainTutorialContainer"><a id="IntegerFinder" class="center mainTutorialBox"><p class="mainTutorialText">Integer Finder</p></a>
+            <ul class="mainStepContainer"><a id="IntegerFinderStep1"><p class="mainHeaderText">Step 1</p></a>
+                <p class="mainText"></p>
+            </ul>
+            <ul class="mainStepContainer"><a id="IntegerFinderStep2"><p class="mainHeaderText">Integer Finder</p></a>
+                <p class="mainText">Version 6.8.3 is stored on GitHub.  Scroll to the bottom of the page and select the cheatengine.exe to download your file.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/IntegerFinder-step2.png" alt="">
+            </ul>
+       </ol>
+       <ol class="mainTutorialContainer"><a id="FindingUnknowns" class="center mainTutorialBox"><p class="mainTutorialText">Finding Unknowns</p></a>
+            <ul class="mainStepContainer"><a id="FindingUnknownsStep1"><p class="mainHeaderText">Step 1</p></a>
+                <p class="mainText"></p>
+            </ul>
+            <ul class="mainStepContainer"><a id="FindingUnknownsStep2"><p class="mainHeaderText">Value Types</p></a>
+                <p class="mainText">Version 6.8.3 is stored on GitHub.  Scroll to the bottom of the page and select the cheatengine.exe to download your file.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/FindingUnknowns-step2.png" alt="">
+            </ul>
+       </ol>
+       <ol class="mainTutorialContainer"><a id="IntegerFinder" class="center mainTutorialBox"><p class="mainTutorialText">Value Types</p></a>
+            <ul class="mainStepContainer"><a id="IntegerFinderStep1"><p class="mainHeaderText">Step 1</p></a>
+                <p class="mainText"></p>
+            </ul>
+            <ul class="mainStepContainer"><a id="IntegerFinderStep2"><p class="mainHeaderText">Integer Finder</p></a>
+                <p class="mainText">Version 6.8.3 is stored on GitHub.  Scroll to the bottom of the page and select the cheatengine.exe to download your file.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/IntegerFinder-step2.png" alt="">
+            </ul>
+       </ol>
+       <ol class="mainTutorialContainer"><a id="Pointers" class="center mainTutorialBox"><p class="mainTutorialText">Pointers</p></a>
+            <ul class="mainStepContainer"><a id="PointersStep1"><p class="mainHeaderText">Step 1</p></a>
+                <p class="mainText"></p>
+            </ul>
+            <ul class="mainStepContainer"><a id="PointersStep2"><p class="mainHeaderText">Step 2</p></a>
+                <p class="mainText">Version 6.8.3 is stored on GitHub.  Scroll to the bottom of the page and select the cheatengine.exe to download your file.</p>
+                <img class="mainImage" src="../Media/tutorial-snippings/Pointers-step2.png" alt="">
+            </ul>
        </ol>
    </main>
 </body>

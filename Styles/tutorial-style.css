@@ -7,23 +7,23 @@
     --NavTextA:rgb(240, 248, 255);
     --NavHighlightTextA:rgb(68, 65, 80);
 
-    --bodyToneA:#808080;
+    --bodyToneA:rgb(30, 29, 32);
     --bodyToneB:rgb(65, 69, 71);
     --bodyToneC:rgb(45, 43, 51);
+    --bodyToneD:rgb(0, 27, 49);
     --bodyTextA:rgb(240, 248, 255);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body, html{
     background-color: var(--bodyToneA);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 100%;
 }
 
 
@@ -431,13 +431,14 @@ Aside
 /*desktop*/
 @media only screen and (min-width: 768px){
     #asideTutorial{
-        margin: 0;
+        margin-top: 50px;
         padding: 0;
         background-color: var(--bodyToneB);
         color:var(--bodyTextA);
         width: 226px;
+        min-height: 860px;
+        max-height: 860px;
         float: left;
-        flex-grow: 1;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -457,7 +458,7 @@ Aside
         margin: 0;
         padding: 0;
         height: 40px;
-        background-color: var(--bodyToneC);
+        background-color: var(--bodyToneD);
         text-decoration: none;
     }
 
@@ -488,6 +489,11 @@ Aside
     }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /*
 Body
@@ -496,38 +502,74 @@ Structure:
 
 Main [.mainContainer]
     OL (header) [.mainTutorialContainer]
+        Anchor [.mainStepContainer, #{Tutorialname}{StepName}]{
         UL (Step) [.mainStepContainer]
+        P (Header Name) [.mainHeaderText]
+        }
             LI.text [.mainText]
             LI.image [.mainImage]
+        Anchor{
         UL (Step)
+        }
             LI.text
             LI.image
     OL (header)
+        Anchor{
         UL (Step)
+        }
             LI.text
             LI.image
+        Anchor []{
         UL (Step)
+        }
             LI.text
             LI.image
 */
 /*desktop*/
 @media only screen and (min-width: 768px){
     .mainContainer{
-
+        background-color: var(--bodyToneA);
+        margin: 50px 0 0 226px;
+        padding: 20px 20px 0 20px;
     }
+
     .mainTutorialContainer{
-
+        width: 100%;
+        background-color: var(--bodyToneC);
+        margin-bottom: 19px;
+        padding-bottom: 1px;
     }
-    .mainStepContainer{
 
+    .mainStepContainer{
+        color: var(--bodyTextA);
+        margin: 20px;
+        padding: 20px;
+        background-image: radial-gradient(var(--bodyToneC), var(--bodyToneB) 100%);
+        display: block;
+    }
+
+    .mainTutorialBox{
+        color: var(--bodyTextA);
+        background-color: var(--bodyToneD);
+        width: 100%;
+        height: 40px;
+    }
+    .mainTutorialText{
+        font-size: 1.75rem;
+    }
+
+    .mainHeaderText{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
     .mainText{
-
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+        color: var(--bodyTextA);
     }
     .mainImage{
-        
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
     }
-}
-main{
-    background-color: var(--bodyToneA);
 }
