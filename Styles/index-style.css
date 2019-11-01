@@ -10,6 +10,7 @@
     --bodyToneA:#808080;
     --bodyToneB:rgb(65, 69, 71);
     --bodyToneC:rgb(45, 43, 51);
+    --bodyToneD:rgb(0, 27, 49);
     --bodyTextA:rgb(240, 248, 255);
 
 }
@@ -374,7 +375,44 @@ main{
 }
 
 #homepageText{
+    z-index: 2;
+    position: absolute;
+}
+#homepageHeader{
+    text-shadow: 0.2vw 0 0 var(--bodyToneD), -0.2vw 0 0 var(--bodyToneD),
+                0 0.2vw 0 var(--bodyToneD), 0 -0.2vw 0 var(--bodyToneD),
+                0.2vw 0.2vw 0 var(--bodyToneD), -0.2vw -0.2vw 0 var(--bodyToneD),
+                0.2vw -0.2vw 0 var(--bodyToneD), -0.2vw 0.2vw 0 var(--bodyToneD);
+    color: var(--NavTextA);
+    font-size: 5vw;
     position: relative;
+    z-index: 2;
+    margin-left: 10vw;
+    margin-top: 11vw;
+}
+#homepageDescription{
+    text-shadow: 0.15vw 0 0 var(--bodyToneD), -0.15vw 0 0 var(--bodyToneD),
+                0 0.15vw 0 var(--bodyToneD), 0 -0.15vw 0 var(--bodyToneD),
+                0.15vw 0.15vw 0 var(--bodyToneD), -0.15vw -0.15vw 0 var(--bodyToneD),
+                0.15vw -0.15vw 0 var(--bodyToneD), -0.15vw 0.15vw 0 var(--bodyToneD);
+    color: var(--NavTextA);
+    font-size: 2vw;
+    margin-left: 35vw;
+    margin-right: 5vw;
+    position: relative;
+    z-index: 2;
+}
+#homepageDownload a{
+    text-shadow: 0.15vw 0 0 var(--bodyToneD), -0.15vw 0 0 var(--bodyToneD),
+                0 0.15vw 0 var(--bodyToneD), 0 -0.15vw 0 var(--bodyToneD),
+                0.15vw 0.15vw 0 var(--bodyToneD), -0.15vw -0.15vw 0 var(--bodyToneD),
+                0.15vw -0.15vw 0 var(--bodyToneD), -0.15vw 0.15vw 0 var(--bodyToneD);
+    color: var(--NavTextA);
+    font-size: 2vw;
+    margin-left: 35vw;
+    margin-right: 5vw;
+    position: relative;
+    z-index: 2;
 }
 
 #screenshot{
