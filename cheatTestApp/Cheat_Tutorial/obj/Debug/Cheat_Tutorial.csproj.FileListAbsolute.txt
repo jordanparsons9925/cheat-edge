@@ -8,3 +8,13 @@ C:\Users\explo\Documents\CNA\Systems Analysis\Cheat_Tutorial\Cheat_Tutorial\obj\
 C:\Users\explo\Documents\CNA\Systems Analysis\Cheat_Tutorial\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.pdb
 C:\Users\explo\Documents\CNA\Systems Analysis\Cheat_Tutorial\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep1.resources
 C:\Users\explo\Documents\CNA\Systems Analysis\Cheat_Tutorial\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep2.resources
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\bin\Debug\Cheat_Tutorial.exe.config
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.exe
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.pdb
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\bin\Debug\Cheat_Tutorial.exe
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\bin\Debug\Cheat_Tutorial.pdb
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep1.resources
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.CheatStep2.resources
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.Properties.Resources.resources
+C:\Users\explo\Documents\GitHub\cheat-edge\cheatTestApp\Cheat_Tutorial\obj\Debug\Cheat_Tutorial.csproj.GenerateResource.Cache

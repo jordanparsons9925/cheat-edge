@@ -40,6 +40,7 @@
             // 
             // btnStep
             // 
+            this.btnStep.Enabled = false;
             this.btnStep.Location = new System.Drawing.Point(236, 152);
             this.btnStep.Name = "btnStep";
             this.btnStep.Size = new System.Drawing.Size(75, 23);

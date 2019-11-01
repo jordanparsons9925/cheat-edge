@@ -43,6 +43,8 @@ namespace Cheat_Tutorial
             if (tutorial2 == 100) {
                 lblCheck.ForeColor = Color.Green;
                 lblCheck.Text = "✓";
+                btnStep.Enabled = true;
+                
             }
             else
             {
@@ -51,7 +53,7 @@ namespace Cheat_Tutorial
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             closeApp = false;
             SwitchForms.OpenStep1();

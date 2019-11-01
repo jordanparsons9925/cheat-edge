@@ -13,7 +13,7 @@ namespace Cheat_Tutorial
     public partial class CheatStep1 : Form
     {
         
-        static byte tutorial1 = 10;
+        static int tutorial1 = 10;
         static bool closeApp;
 
         public CheatStep1()
@@ -25,17 +25,12 @@ namespace Cheat_Tutorial
         {
             if (tutorial1 > 0)
                 tutorial1--;
-            else
-                tutorial1 = 255;
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (tutorial1 < 255)
+            if (tutorial1 < 99)
                 tutorial1++;
-            else
-                tutorial1 = 0;
         }
 
         private void CheatTutorial_Load(object sender, EventArgs e)
@@ -46,6 +41,8 @@ namespace Cheat_Tutorial
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblNum.Text = tutorial1.ToString();
+            if (tutorial1 == 100)
+                btnStep.Enabled = true;
         }
 
         private void btnStep_Click(object sender, EventArgs e)
