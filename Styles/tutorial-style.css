@@ -449,6 +449,17 @@ Main [.mainContainer]
         display: block;
 
     }
+    
+    .newcenter{
+        text-align: center;
+        list-style: none;
+    }
+    
+    .newcenter p {
+        padding-top: .15em;
+        vertical-align: middle;
+        width: 100%;
+    }
 
     .mainTutorialBox{
         color: var(--bodyTextA);
