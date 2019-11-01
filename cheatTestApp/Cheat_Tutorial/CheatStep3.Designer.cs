@@ -32,11 +32,9 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnStr3 = new System.Windows.Forms.Button();
-            this.btnStr1 = new System.Windows.Forms.Button();
-            this.btnStr2 = new System.Windows.Forms.Button();
-            this.lblOutput = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblRed = new System.Windows.Forms.Label();
+            this.lblBlue = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBack
@@ -57,7 +55,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Step 2";
+            this.label2.Text = "Step 3";
             // 
             // label1
             // 
@@ -67,65 +65,39 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 17;
             // 
-            // btnStr3
-            // 
-            this.btnStr3.Location = new System.Drawing.Point(236, 120);
-            this.btnStr3.Name = "btnStr3";
-            this.btnStr3.Size = new System.Drawing.Size(75, 23);
-            this.btnStr3.TabIndex = 16;
-            this.btnStr3.Text = "String 3";
-            this.btnStr3.UseVisualStyleBackColor = true;
-            this.btnStr3.Click += new System.EventHandler(this.btnStr3_Click);
-            // 
-            // btnStr1
-            // 
-            this.btnStr1.Location = new System.Drawing.Point(16, 120);
-            this.btnStr1.Name = "btnStr1";
-            this.btnStr1.Size = new System.Drawing.Size(75, 23);
-            this.btnStr1.TabIndex = 15;
-            this.btnStr1.Text = "String 1";
-            this.btnStr1.UseVisualStyleBackColor = true;
-            this.btnStr1.Click += new System.EventHandler(this.btnStr1_Click);
-            // 
-            // btnStr2
-            // 
-            this.btnStr2.Location = new System.Drawing.Point(128, 120);
-            this.btnStr2.Name = "btnStr2";
-            this.btnStr2.Size = new System.Drawing.Size(75, 23);
-            this.btnStr2.TabIndex = 20;
-            this.btnStr2.Text = "String 2";
-            this.btnStr2.UseVisualStyleBackColor = true;
-            this.btnStr2.Click += new System.EventHandler(this.btnStr2_Click);
-            // 
-            // lblOutput
-            // 
-            this.lblOutput.BackColor = System.Drawing.Color.Transparent;
-            this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutput.Location = new System.Drawing.Point(8, 40);
-            this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(312, 72);
-            this.lblOutput.TabIndex = 21;
-            this.lblOutput.Text = "SAMPLE TEXT";
-            this.lblOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 16;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblRed
+            // 
+            this.lblRed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblRed.Location = new System.Drawing.Point(48, 56);
+            this.lblRed.Name = "lblRed";
+            this.lblRed.Size = new System.Drawing.Size(88, 72);
+            this.lblRed.TabIndex = 20;
+            // 
+            // lblBlue
+            // 
+            this.lblBlue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lblBlue.Location = new System.Drawing.Point(192, 56);
+            this.lblBlue.Name = "lblBlue";
+            this.lblBlue.Size = new System.Drawing.Size(88, 72);
+            this.lblBlue.TabIndex = 21;
+            // 
             // CheatStep3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(126)))));
             this.ClientSize = new System.Drawing.Size(328, 189);
-            this.Controls.Add(this.btnStr2);
+            this.Controls.Add(this.lblBlue);
+            this.Controls.Add(this.lblRed);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnStr3);
-            this.Controls.Add(this.btnStr1);
-            this.Controls.Add(this.lblOutput);
             this.MaximumSize = new System.Drawing.Size(344, 228);
             this.MinimumSize = new System.Drawing.Size(344, 228);
             this.Name = "CheatStep3";
@@ -143,10 +115,8 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnStr3;
-        private System.Windows.Forms.Button btnStr1;
-        private System.Windows.Forms.Button btnStr2;
-        private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblRed;
+        private System.Windows.Forms.Label lblBlue;
     }
 }

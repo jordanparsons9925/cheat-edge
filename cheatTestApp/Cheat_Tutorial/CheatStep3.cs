@@ -13,7 +13,9 @@ namespace Cheat_Tutorial
     public partial class CheatStep3 : Form
     {
         static bool closeApp;
-        static string tutorial3 = "SAMPLE TEXT";
+        static float tutorial3 = 1.27f;
+        static byte red = 127;
+        static byte blue = 126;
 
         public CheatStep3()
         {
@@ -38,31 +40,36 @@ namespace Cheat_Tutorial
                 Application.Exit();
         }
 
-        private void btnStr1_Click(object sender, EventArgs e)
-        {
-            tutorial3 = "According to all known laws of aviation, there is " +
-                        "no way a bee should be able to fly. Its wings are " +
-                        "too small to get its fat little body off the ground.";
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblOutput.Text = tutorial3;
+            if (Cursor.Position.X - this.Location.X - 8 >= lblRed.Location.X
+                && Cursor.Position.X - this.Location.X - 8 < lblRed.Location.X + lblRed.Size.Width
+                && Cursor.Position.Y - this.Location.Y - 32 >= lblRed.Location.Y
+                && Cursor.Position.Y - this.Location.Y - 32< lblRed.Location.Y + lblRed.Size.Height)
+                lblRed_MouseHover();
+
+            if (Cursor.Position.X - this.Location.X - 8 >= lblBlue.Location.X
+                && Cursor.Position.X - this.Location.X - 8< lblBlue.Location.X + lblBlue.Size.Width
+                && Cursor.Position.Y - this.Location.Y - 32>= lblBlue.Location.Y
+                && Cursor.Position.Y - this.Location.Y - 32< lblBlue.Location.Y + lblBlue.Size.Height)
+                lblBlue_MouseHover();
+
+                red = (byte) (tutorial3 * 100f);
+            blue = (byte) (255 - red);
+
+            this.BackColor = Color.FromArgb(red, 0, blue);
         }
 
-        private void btnStr2_Click(object sender, EventArgs e)
+        private void lblRed_MouseHover()
         {
-            tutorial3 = "The FitnessGram Pacer Test is a multistage aerobic " +
-                        "capacity test that progressively gets more difficult " +
-                        "as it continues. The 20 meter pacer test will begin " +
-                        "in 30 seconds.";
+            if (tutorial3 < 2.55f)
+                tutorial3 += .01f;
         }
 
-        private void btnStr3_Click(object sender, EventArgs e)
+        private void lblBlue_MouseHover()
         {
-            tutorial3 = "Lorem ipsum dolor sit amet, consectetur adipiscing " +
-                        "elit, sed do eiusmod tempor incididunt ut labore " +
-                        "et dolore magna aliqua..";
+            if (tutorial3 > 0f)
+                tutorial3 -= .01f;
         }
     }
 }

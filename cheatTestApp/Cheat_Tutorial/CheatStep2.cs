@@ -13,7 +13,7 @@ namespace Cheat_Tutorial
     public partial class CheatStep2 : Form
     {
 
-        static int tutorial2;
+        static uint tutorial2;
         static bool closeApp;
         Random rnd = new Random();
 
@@ -70,7 +70,7 @@ namespace Cheat_Tutorial
         private void CheatStep2_Load(object sender, EventArgs e)
         {
             closeApp = true;
-            tutorial2 = rnd.Next(-1000, 1000);
+            tutorial2 = (uint) rnd.Next(101, 1000);
 
         }
 
