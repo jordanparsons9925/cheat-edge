@@ -438,6 +438,8 @@ Aside
         width: 226px;
         float: left;
         flex-grow: 1;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     #tutorialContainer{
@@ -489,8 +491,43 @@ Aside
 
 /*
 Body
-*/
 
+Structure:
+
+Main [.mainContainer]
+    OL (header) [.mainTutorialContainer]
+        UL (Step) [.mainStepContainer]
+            LI.text [.mainText]
+            LI.image [.mainImage]
+        UL (Step)
+            LI.text
+            LI.image
+    OL (header)
+        UL (Step)
+            LI.text
+            LI.image
+        UL (Step)
+            LI.text
+            LI.image
+*/
+/*desktop*/
+@media only screen and (min-width: 768px){
+    .mainContainer{
+
+    }
+    .mainTutorialContainer{
+
+    }
+    .mainStepContainer{
+
+    }
+    .mainText{
+
+    }
+    .mainImage{
+        
+    }
+}
 main{
     background-color: var(--bodyToneA);
 }
