@@ -396,6 +396,7 @@ nav bar
     }
 
     .T2Dropdown{
+        z-index: 3;
         position: relative;
         list-style: none;
         height: 100%;
