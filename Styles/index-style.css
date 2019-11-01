@@ -373,8 +373,12 @@ main{
     position: relative;
 }
 
+#homepageText{
+    position: relative;
+}
+
 #screenshot{
     width: 90vw;
-    margin-left: 5%;
+    margin-left: 4vw;
     position: absolute;
 }
