@@ -181,7 +181,7 @@ nav bar
 
     #homeButton {
         padding:10px;
-        height: 30px;
+        height: 50px;
         background-color: var(--NavToneA);
         float: left;
     }
@@ -479,6 +479,6 @@ Main [.mainContainer]
         margin-right: auto;
         margin-left: auto;
         display: block;
-
+        margin-bottom: 10px;
     }
 }
