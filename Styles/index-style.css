@@ -439,6 +439,7 @@ a.button {
     appearance: button;
     display: block;
     margin: 0;
+    margin-top: 10px;
     position: relative;
     text-align: center;
     border: 2px var(--bodyTextA) solid;
