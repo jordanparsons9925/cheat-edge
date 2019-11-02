@@ -1,12 +1,3 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 window.onload = function(){
     document.getElementById("lightSwitch").addEventListener("click", HandelSwitch) 
     sessionStorage.setItem("light", "0")
@@ -69,3 +60,40 @@ function HandelSwitch(){
     }
 
 }
+/*
+    dark 
+
+    --HeaderToneA:rgb(37, 35, 46);
+    --HeaderTextA:rgb(240, 248, 255);
+
+    --NavToneA:rgb(45, 43, 51);
+    --NavHighlightA:rgb(240, 248, 255);
+    --NavTextA:rgb(240, 248, 255);
+    --NavHighlightTextA:rgb(68, 65, 80);
+
+    --bodyToneA:#808080;
+    --bodyToneB:rgb(65, 69, 71);
+    --bodyToneC:rgb(45, 43, 51);
+    --bodyToneD:rgb(0, 27, 49);
+    --bodyToneE:rgb(18, 19, 20);
+    --bodyTextA:rgb(240, 248, 255);
+
+    light
+
+    --HeaderToneA:rgb(228, 249, 250);
+    --HeaderTextA:rgb(0, 0, 0);
+
+    --NavToneA:rgb(213, 220, 226);
+    --NavHighlightA:rgb(35, 84, 88);
+    --NavTextA:rgb(0, 0, 0);
+    --NavHighlightTextA:rgb(213, 220, 226);
+
+    --bodyToneA:rgb(226, 226, 226);
+    --bodyToneB:rgb(195, 206, 204);
+    --bodyToneC:rgb(255, 255, 255);
+    --bodyToneD:rgb(195, 233, 225);
+    --bodyToneE:rgb(148, 148, 148);
+    --bodyTextA:rgb(0, 0, 0);
+
+
+*/

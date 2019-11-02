@@ -1,4 +1,5 @@
 :root{
+
     --HeaderToneA:rgb(37, 35, 46);
     --HeaderTextA:rgb(240, 248, 255);
 
@@ -7,13 +8,13 @@
     --NavTextA:rgb(240, 248, 255);
     --NavHighlightTextA:rgb(68, 65, 80);
 
-    --bodyToneA:rgb(30, 29, 32);
+    --bodyToneA:#1b1b1b;
     --bodyToneB:rgb(65, 69, 71);
     --bodyToneC:rgb(45, 43, 51);
     --bodyToneD:rgb(0, 27, 49);
+    --bodyToneE:rgb(18, 19, 20);
     --bodyTextA:rgb(240, 248, 255);
 }
-
 * {
     margin: 0;
     padding: 0;
